@@ -12,4 +12,4 @@ while 'E' in escolha:
 
 # pela atividade fisica e genero, multiplicar pelo valor
 #printar o resultado junto com o nome do usuario
-
+#criar um tempo de espera com mensagem "calculando..." e depois printar o resultado (extra)

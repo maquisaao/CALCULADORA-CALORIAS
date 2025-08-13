@@ -11,6 +11,7 @@ while 'E' in escolha:
         'Sua frequencia de atividade fisica é [L]eve, [M]oderada ou [I]ntensa? ')
 
 # pela atividade fisica e genero, multiplicar pelo valor
+#printar o resultado junto com o nome do usuario
     if genero == 'H' and frequencia_fisica == 'L':
         consumo_diario = ((0.063*float(peso)+2.896)*239)*1.11
         valor = '%s, seu gasto calorico diario é de %.2f.\n' % (
@@ -48,5 +49,4 @@ while 'E' in escolha:
         print(valor)
 
     escolha = input('[RE]petir [S]air \n')
-#printar o resultado junto com o nome do usuario
-#criar um tempo de espera com mensagem "calculando..." e depois printar o resultado (extra)
+#criar um tempo de espera com mensagem "calculando..." e depois printar o resultado (extra na tarefa2)

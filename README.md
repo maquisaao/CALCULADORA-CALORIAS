@@ -66,8 +66,8 @@ Qual seu gênero, [H]omem ou [M]ulher? M
 Sua frequencia de atividade fisica é [L]eve, [M]oderada ou [I]ntensa? M
 
 Ana, seu gasto calorico diario é de 2035.40.
-[RE]petir [S]air´´´
-
+[RE]petir [S]air
+```
 
 **Este projeto está em desenvolvimento e será atualizado com novas funcionalidades.**
 

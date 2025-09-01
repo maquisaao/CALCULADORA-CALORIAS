@@ -19,3 +19,28 @@ def calcular_gasto_calorico(peso, genero, frequencia):
     }
     return base * fatores[frequencia]
 
+# funcao pro menu
+def main():
+    escolha = input('[E]ntrar [S]air \n').strip().upper() # garantir que letras minusculas e maiusculas sejam aceitas
+
+    while escolha == 'E':
+        nome = input('Qual seu nome? ')
+        idade = int(input('Qual sua idade? '))
+        peso = float(input('Qual seu peso (kg)? '))
+        altura = float(input('Qual sua altura (m)? '))
+        genero = input('Qual seu gênero, [H]omem ou [M]ulher? ').strip().upper()
+        frequencia = input(
+            'Sua frequência de atividade física é [L]eve, [M]oderada ou [I]ntensa? '
+        ).strip().upper()
+
+        print("\nCalculando...\n")  # simular tempo de espera pro calculo
+        time.sleep(2)
+
+        gasto = calcular_gasto_calorico(peso, genero, frequencia)
+        print(f"{nome}, seu gasto calórico diário é de {gasto:.2f} kcal.\n")
+
+        escolha = input('[RE]petir [S]air \n').strip().upper()
+
+
+if __name__ == "__main__":
+    main()

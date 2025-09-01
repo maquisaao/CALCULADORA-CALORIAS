@@ -2,16 +2,15 @@
 # fazer funcao pro menu
 # garantir que letras minusculas e maiusculas sejam aceitas
 # simular tempo de espera pro calculo ( enfeite )
+import time
 
 # fucao pro gasto 
 def calcular_gasto_calorico(peso, genero, frequencia):
-    # Constantes diferentes para homens e mulheres
     if genero == 'H':
         base = (0.063 * peso + 2.896) * 239
     else:  # genero == 'M'
         base = (0.062 * peso + 2.036) * 239
 
-    # Fatores de multiplicação pela frequência
     fatores = {
         'L': 1.11,
         'M': 1.25,
@@ -27,7 +26,7 @@ def main():
         nome = input('Qual seu nome? ')
         idade = int(input('Qual sua idade? '))
         peso = float(input('Qual seu peso (kg)? '))
-        altura = float(input('Qual sua altura (m)? '))
+        altura = float(input('Qual sua altura (cm)? '))
         genero = input('Qual seu gênero, [H]omem ou [M]ulher? ').strip().upper()
         frequencia = input(
             'Sua frequência de atividade física é [L]eve, [M]oderada ou [I]ntensa? '
